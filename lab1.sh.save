@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Parent PID: $$"            
+sleep 20 &
+echo “Child PID: $!”              
+
+
+ps -o pid,ppid,cmd
+
+$$
+sleep 30 & 
+ $! 
+ ps -o pid,ppid,cmd 
+  ps -
